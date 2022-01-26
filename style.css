@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@400;700&family=Sniglet&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(./img/icons8-menu-50.png);
+}
+/* .custom-toggler.navbar-toggler {
+  border-color: black;
+} */
+header a {
+  font-family: "Sniglet", cursive;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+header {
+  /* background: #f59607; */
+  background: rgb(36, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 0, 0, 1) 0%,
+    rgba(245, 150, 7, 1) 0%,
+    rgba(255, 83, 68, 1) 100%,
+    rgba(158, 7, 48, 1) 100%,
+    rgba(6, 93, 177, 1) 100%
+  );
+}
+
+header .nav-item:last-child {
+  padding-right: 5rem;
+}
+
+header .nav-item {
+  padding: 1rem;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-7 {
+  padding: 10rem 3rem;
+  padding-bottom: 20rem;
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+header .container .col-md-7 h6 {
+  padding: 0.5rem;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.1rem 0;
+}
+
+header .container .col-md-7 p {
+  padding: 0.5rem;
+}
+
+header .container .col-md-7 button {
+  border-radius: 30px;
+  font-weight: bold;
+}
+/* SKILLS */
+.skills-heading {
+  font-family: "Rubik", sans-serif;
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 1rem;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(245, 150, 7, 0.65);
+}
+
+.numbers {
+  margin-top: 8.5rem;
+  margin-bottom: 8.5rem;
+}
+
+.logo {
+  color: #f59607;
+  width: 128px;
+  padding: 1rem;
+}
+/* ABOUT  */
+.about-heading {
+  margin-left: 30rem;
+  margin-bottom: 8rem;
+  font-family: "Rubik", sans-serif;
+}
+.section-2 {
+  padding: 8rem 0;
+}
+.section-2 .row .col-md-6 .my-image img {
+  opacity: 0.8;
+  width: 50%;
+  border-radius: 0.2em;
+}
+
+.section-2 .row .col-md-6:last-child {
+  position: relative;
+}
+.section-2 .row .col-md-6 {
+  margin: 8rem 0;
+}
+.section-2 .row .col-md-6 .panel {
+  position: absolute;
+  top: 3rem;
+  left: -8rem;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 4rem 7rem;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: "Rubik", sans-serif;
+  z-index: 1;
+}
+
+.section-2 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-2 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 5rem 5rem;
+}
+footer p > span {
+  color: #f59607;
+}
+
+footer input {
+  border: none !important;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .input-group .input-group-text {
+  background: rgb(36, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 0, 0, 1) 0%,
+    rgba(245, 150, 7, 1) 0%,
+    rgba(255, 83, 68, 1) 100%,
+    rgba(158, 7, 48, 1) 100%,
+    rgba(6, 93, 177, 1) 100%
+  );
+  border: none;
+}
+
+footer .column i {
+  color: #f59607;
+}
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+  .section-2 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+  .numbers .rect {
+    width: 10rem;
+    height: 12rem;
+  }
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-3 .platform .col-md-6 {
+    text-align: center !important;
+  }
+  .section-3 .desktop i {
+    font-size: 8vmin;
+  }
+  .section-4 .carousel-item {
+    padding-left: 0.6rem;
+  }
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+  .section-4 .card {
+    width: 18em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-4 .carousel-inner {
+    margin-left: -4vmin;
+  }
+}
